@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>  
+   
+</head>
+
+<style>
+     @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;1,9..40,100&display=swap');
+
+*{
+    font-family: 'DM Sans', sans-serif;
+}
+body{
+    box-sizing: border-box;
+    margin: 5px;
+    padding: 5px;
+    background-color: rgb(28, 5, 160);
+}
+.head{
+    
+    position: absolute;
+   text-align: left;
+   margin-left: -410px;
+   margin-top: 0px;
+   font-size: large;
+}
+    nav{
+        
+    margin-left: 560px;
+}
+nav li{
+    color: white;
+    margin-top: -20px;
+    list-style: none;
+    font-size: small;
+    display: inline;
+    align-items:flex-end;
+    align-content:flex-end;
+    padding: 8px;
+    cursor: pointer;
+}
+nav li:hover{
+    color: gray;
+}
+.page{
+    display: flex;
+    justify-content: space-between;
+}
+.maintxt{
+font-size: 1.7rem;
+font-family: 'DM Sans', sans-serif;
+}
+.subtext{
+ margin-top: -30px;
+ margin-left: -8px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: small;
+text-decoration: none;
+font-weight: 400;
+padding: 8px;
+text-align: justify;
+text-orientation: sideways;
+
+font-family: 'DM Sans', sans-serif;
+}
+.pink{
+    border-style: none;
+    border-radius: 25px;
+    padding: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgb(210, 72, 118);
+    font-size: small;
+    color: aliceblue;
+    margin-left: -5px;
+    cursor: pointer;
+}
+.pink:hover{
+    background-color: aliceblue;
+    color: palevioletred;
+}
+.subject{
+   color: white;
+   margin-left: 180px;
+   margin-top: 40px;
+   
+}
+
+.form{
+
+     margin-top: 55px;
+    margin-right: 280px;
+    border: 2px solid white;
+    border-radius: 15px;
+    background-color: aliceblue;
+    padding: 8px; 
+    width: 330px;
+    
+}
+
+.inpt{
+    margin-left: 40px;
+    margin-bottom: 30px ;
+    border: 5px ;
+    border-radius: 25px;
+    padding: 8px;
+    padding-right: 70px;
+}
+.sign{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+  }
+  .stline{
+    width: 100px;
+    margin-left:30px;
+    margin-right: -20px;
+
+  }
+  .or{
+    position: absolute;
+    margin-left: 130px;
+    margin-top: -20px;
+  }
+  .stoline{
+    margin-top: -10px;
+    width: 100px;
+    margin-left: 160px;
+  }
+  .sigbtn{
+    margin-left: 40px;
+    margin-bottom: 8px;
+      border: 1px solid;
+      border-radius: 15px;
+      background-color: rgb(90, 90, 234);
+      color:white;
+      padding-left: 90px;
+      padding-right: 90px;
+      padding-top: 8px;
+      cursor: pointer;
+      padding-bottom: 8px;
+
+  }
+  .checks{
+    margin-left: 50px;
+    font-size: small;
+  }
+  .twetbtn{
+    margin-left: 40px;
+  margin-top: 10px;
+    border: 1px solid;
+    border-radius: 15px;
+    background-color:rgb(72, 183, 220);
+    color:white;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    cursor: pointer;
+  }
+  .Sgnin{
+    color: rgb(37, 176, 223);
+    font-weight: bolder;
+    text-indent: 50px;
+    cursor: pointer;
+
+  }
+  .tick{
+   
+    cursor: pointer;
+  user-select: none;
+  }
+  
+  #check{
+    margin-right: 6px;
+    /* pointer-events: none; */
+  }
+  label{
+    font-weight: 500;
+    color: black;
+    cursor: pointer;
+  }
+  #check:checked{
+    accent-color: lightgreen;
+  }
+
+  .option{
+margin-left: 60px;
+color: gray;
+cursor: pointer;
+font-size: 11px;
+  }
+</style>
+
+<body>
+    
+    <nav>
+        <ul>
+            <li><h5 class="head">Startup3</h5></li>
+            <li>Overeview</li>
+            <li>Prices</li>
+            <li>Blog</li>
+            <li>Feedback</li>
+            <li><button class="pink">Purchase</button></li>
+        </ul>
+    </nav>
+<div class="page">
+    <div class="subject">
+       <div class="maintxt"> <h1 >
+            Generate <br>Awesome Web <br>Pages
+        </h1>
+    </div>
+        <h3 class="subtext">
+            The most Important part of the <br>Startup is samples.The<br> Sample forms a set of 25 usable<br> Pages.you can use as is or you can <br>add new blocks
+        </h3>
+     <button class="pink">Learn more</button>
+    </div>
+ <div class="form">
+    <h3 class="sign">Sign Up Now</h3>
+    <input type="email" class="inpt" name="name" placeholder="    Your mail"></input><br>
+    <input type="password" class="inpt" name="name" placeholder="   Your password"></input>
+    <br>
+    <div class="checks">
+    <input type="checkbox" id="check" name="check"></input>
+    <label for="check">I agree to the Terms of Service.</label>
+</div>
+<br>
+    <button class="sigbtn">Sign in</button>
+    <div class="linet">
+    <hr class="stline"><span class="or">Or</span><hr class="stoline">
+</div>
+    <button class="twetbtn">Login via Twitter</button>
+    
+    <h6 class="option">Do you have an Account?<span class="Sgnin">Sign in</span></h6>
+
+
+</div>
+
+</div>
+</body>
+</html>
